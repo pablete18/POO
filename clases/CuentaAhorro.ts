@@ -22,4 +22,4 @@ class CuentaAhorro extends CuentaBancaria{
 const cuentaAhorro1 = new CuentaAhorro('Rufina',1000, 3)
 
 const saldoConInteres = cuentaAhorro1.calcularInteres()
-console.log(saldoConInteres);
+console.log(cuentaAhorro1 , saldoConInteres);
