@@ -46,9 +46,11 @@ class Pedido {
     }
 
     agregarProducto (producto : Producto) : Producto[] {
-       
-         this.producto.push(producto)
 
+         producto.stock -= 1
+
+         this.producto.push(producto)
+       
          return this.producto // restar producto del stock
     }
 
@@ -81,4 +83,4 @@ const productoAgregado = pedido1.agregarProducto(new Producto('Computadora',3000
 /* const productoEliminado = pedido1.removerProducto(producto1) */
 const totalCarrito = pedido1.calcularTotal() 
 
-console.log(totalCarrito);
+console.log(productoAgregado);
