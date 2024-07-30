@@ -47,11 +47,11 @@ class Pedido {
 
     agregarProducto (producto : Producto) : Producto[] {
 
-         producto.stock -= 1
+         producto.stock -= 1 // restar producto del stock
 
          this.producto.push(producto)
        
-         return this.producto // restar producto del stock
+         return this.producto 
     }
 
     removerProducto (producto : Producto) : Producto[]{
